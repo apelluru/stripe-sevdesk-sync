@@ -4,9 +4,10 @@ This project syncs transactions from Stripe to SevDesk using their respective AP
 
 ## Project Structure
 
-- `pull-from-stripe/`: Contains logic to interact with the Stripe API.
-- `push-to-sevdesk/`: Contains logic to interact with the SevDesk API.
-- `main.py`: Orchestrates the data flow from Stripe to SevDesk.
+- `stripe_integration/`: Contains logic to interact with the Stripe API.
+- `sevdesk_client/`: Contains logic to interact with the SevDesk API.
+- `main.py`: Orchestrates the data flow from Stripe to SevDesk. and Test API connections
+- `sync_transactions.py` will pull the transactions from stripe and upload to SevDesk
 
 ## Requirements
 
@@ -34,6 +35,7 @@ This project syncs transactions from Stripe to SevDesk using their respective AP
 
     ```bash
     pip install -r requirements.txt
+    pip install -r sevdesk_client/requirements.txt
     ```
 
 ## Configuration
